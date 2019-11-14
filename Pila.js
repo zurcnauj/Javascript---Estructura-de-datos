@@ -38,9 +38,12 @@ var PilaNodo = function(){
 	}
 	this.desapilar = function(){
 		let retu = nodo
-		size--
-		nodo = nodo.getAnterior()
-		return retu.getElemento()
+		if(nodo != null){
+			size--
+			nodo = nodo.getAnterior()
+			return retu.getElemento()
+		}
+		return null
 	}
 }
 
