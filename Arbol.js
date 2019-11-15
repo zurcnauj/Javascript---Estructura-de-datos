@@ -1,5 +1,3 @@
-// arbol de nodos
-
 var NodoArbol = function(elemento){
 	let padre = null 
 	let hijos = []
